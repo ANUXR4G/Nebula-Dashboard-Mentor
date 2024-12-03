@@ -23,8 +23,7 @@ function Addsession() {
   };
 
   return (
-    <div className="max-w-full mt-10 p-5 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-5 text-center">Add New Session</h2>
+    <div className="w-full mt-10 p-5 bg-white rounded-lg shadow-md">
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block text-sm font-semibold mb-1" htmlFor="sessionTitle">
