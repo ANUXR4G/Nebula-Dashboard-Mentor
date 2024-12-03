@@ -9,6 +9,7 @@ import UserProfile from './components/Login/Home/profile';
 import Problemstatement from './components/Login/Home/problemstatement';
 import Mentors from './components/Login/Home/mentors';
 import SignUp from './components/Login/Layout/signup';
+import Addsession from './components/Login/Home/addsession';
 
 
 const route = createBrowserRouter([
@@ -47,6 +48,10 @@ const route = createBrowserRouter([
       {
         path: "/dashboard/start-up",
         element: <Mentors/>
+      },
+      {
+        path: "/dashboard/add-session",
+        element: <Addsession/>
       },
     ]
   }

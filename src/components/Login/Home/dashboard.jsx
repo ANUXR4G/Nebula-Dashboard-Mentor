@@ -21,6 +21,7 @@ import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
+import EditCalendarIcon from '@mui/icons-material/EditCalendar';
 import Badge from '@mui/material/Badge';
 import Popover from '@mui/material/Popover';
 import Tabs from '@mui/material/Tabs';
@@ -91,7 +92,14 @@ function Dashboard(props) {
             <ListItemText primary="Calendar" primaryTypographyProps={{ style: { color: 'white' } }} />
           </ListItemButton>
         </ListItem>
-       
+        <ListItem disablePadding>
+          <ListItemButton component={Link} to="/dashboard/add-session">
+            <ListItemIcon>
+              <EditCalendarIcon style={{ color: 'white' }} />
+            </ListItemIcon>
+            <ListItemText primary="Add Session" primaryTypographyProps={{ style: { color: 'white' } }} />
+          </ListItemButton>
+        </ListItem>
       </List>
       <Divider />
       <List className='bg-[#4c5d34]'>
